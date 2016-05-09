@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\Drum.o
+./debug\DrumNode.o
+./debug\score.o
+./debug\Game.o
+./debug\Timer.o
+./debug\BeginingWindow.o
+./debug\qrc_img.o
+./debug\moc_Drum.o
+./debug\moc_DrumNode.o
+./debug\moc_Timer.o
+./debug\moc_BeginingWindow.o
+);

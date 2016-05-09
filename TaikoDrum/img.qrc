@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/background.jpg</file>
+        <file>img/bg_miss_clear.png</file>
+        <file>img/drum.png</file>
+        <file>img/bluebig.png</file>
+        <file>img/blueSmall.png</file>
+        <file>img/redBig.png</file>
+        <file>img/redSmall.png</file>
+        <file>img/drumPoint.png</file>
+    </qresource>
+</RCC>

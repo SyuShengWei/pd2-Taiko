@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\Drum.o
+./release\DrumNode.o
+./release\score.o
+./release\Game.o
+./release\Timer.o
+./release\BeginingWindow.o
+./release\qrc_img.o
+./release\moc_Drum.o
+./release\moc_DrumNode.o
+./release\moc_Timer.o
+./release\moc_BeginingWindow.o
+);

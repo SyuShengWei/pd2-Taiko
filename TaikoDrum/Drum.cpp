@@ -131,7 +131,7 @@ void Drum::keyPressEvent(QKeyEvent *event){
 void Drum::createDrumRedNode()
 {
     int ifCreate = rand()%10;
-    if(ifCreate <=1){
+    if(ifCreate <=1 && game->gameTime > 3){
         DrumRedNode * redNode = new DrumRedNode();
         scene()->addItem(redNode);
         redNode->show();
@@ -141,7 +141,7 @@ void Drum::createDrumRedNode()
 void Drum::createDrumBlueNode()
 {
     int ifCreate = rand()%10;
-    if(ifCreate <=1){
+    if(ifCreate <=1 && game->gameTime > 3){
         DrumBlueNode * blueNode = new DrumBlueNode();
         scene()->addItem(blueNode);
         blueNode->show();

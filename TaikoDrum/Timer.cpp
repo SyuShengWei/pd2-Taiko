@@ -54,8 +54,8 @@ void myTimer::decreaseTime()
             game->score->setFont(QFont("times",16));
             //start all timer
             timer->start(1000);
-            game->drum->timerBlue->start(233);
-            game->drum->timerRed->start(300);
+            game->drum->timerRed->start(313);
+            game->drum->timerBlue->start(277);
         }
         else if(rb ==QMessageBox::No){
             qApp->exit();

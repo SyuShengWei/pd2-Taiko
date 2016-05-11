@@ -11,5 +11,7 @@
         <file>img/bad.png</file>
         <file>img/excellent.png</file>
         <file>img/good.png</file>
+        <file>img/exitButtom.png</file>
+        <file>img/startButtom.png</file>
     </qresource>
 </RCC>

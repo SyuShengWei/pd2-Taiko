@@ -9,8 +9,8 @@ Game::Game()
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,518,364);
 
+    //set view. P.S. Game Class is a QGraphicsView
     setBackgroundBrush(QBrush(QImage(":/img/img/bg_miss_clear.png")));
-
     setScene(scene);
     setFixedSize(518,364);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -24,17 +24,21 @@ Game::Game()
     drum->setFocus();
     drum->setPixmap(QPixmap(":/img/img/drumPoint.png"));
     drum->setPos(0,120);
-    qDebug()<<drum->pos();
     drum->show();
+
+    //create judgement message
+    scene->addItem(drum->judgement);
 
     //create score
     score = new Score();
     scene->addItem(score);
-    score->setPos(timer->x(),timer->y()+25);
-    //create timer
+    score->setPos(0,25);
+
+    //create game timer
     gameTime=30;
     timer = new myTimer();
     scene->addItem(timer);
+
     //show();
 }
 

@@ -11,6 +11,7 @@
 #include <QObject>
 #include <typeinfo>
 #include <QFont>
+#include <QMediaPlayer>
 
 class Drum:public QObject,public QGraphicsPixmapItem {
     Q_OBJECT
@@ -20,6 +21,12 @@ public:
     void setRandomDrum(int number);
     QTimer *timerRed;
     QTimer *timerBlue;
+
+    QMediaPlayer * redSound;
+    QMediaPlayer * blueSound;
+
+    QGraphicsPixmapItem * judgement;
+    QTimer *timerJudgement;
 private:
     int random_drum;
     QTimer * nodeTimer;
@@ -28,6 +35,7 @@ private:
 public slots:
     void createDrumRedNode();
     void createDrumBlueNode();
+    void hideJudgement();
 };
 
 #endif // DRUM_H

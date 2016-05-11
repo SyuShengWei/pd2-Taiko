@@ -21,7 +21,8 @@ void DrumRedNode::move(){
     if(pos().x() + pixmap().width() < -520 ||game->gameTime == 0){
         scene()->removeItem(this);
         delete this ;
-        qDebug() << "delete";
+        if(game->gameTime != 0)
+            game->score->increaseScore(-1);
     }
 }
 
@@ -42,7 +43,10 @@ void DrumBlueNode::move(){
     if(pos().x() + pixmap().width() < -520 ||game->gameTime == 0){
         scene()->removeItem(this);
         delete this ;
-        qDebug() << "delete";
+
+        //decrease 1 point if not delete
+        if(game->gameTime != 0)
+            game->score->increaseScore(-1);
     }
 
 }

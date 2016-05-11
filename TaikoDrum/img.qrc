@@ -8,5 +8,8 @@
         <file>img/redBig.png</file>
         <file>img/redSmall.png</file>
         <file>img/drumPoint.png</file>
+        <file>img/bad.png</file>
+        <file>img/excellent.png</file>
+        <file>img/good.png</file>
     </qresource>
 </RCC>

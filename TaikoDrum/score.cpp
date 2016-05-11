@@ -13,7 +13,11 @@ Score::Score(QGraphicsItem *parent):QGraphicsTextItem(parent)
 
 void Score::increaseScore(int i)
 {
-    score = score + i;
+    if(score + i >= 0 )
+        score = score + i;
+    else
+        score = 0;
+
     setPlainText("Score:" + QString::number(score));
     setDefaultTextColor(Qt::red);
     setFont(QFont("times",16));

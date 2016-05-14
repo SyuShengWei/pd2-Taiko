@@ -18,7 +18,8 @@ class Drum:public QObject,public QGraphicsPixmapItem {
 public:
     Drum();
     void keyPressEvent(QKeyEvent *event);
-    void setRandomDrum(int number);
+    void setRandomDrum();
+
     QTimer *timerRed;
     QTimer *timerBlue;
 
@@ -30,7 +31,6 @@ public:
 private:
     int random_drum;
     QTimer * nodeTimer;
-    int score;
 
 public slots:
     void createDrumRedNode();

@@ -2,7 +2,7 @@
 #include <QFont>
 
 
-Score::Score(QGraphicsItem *parent):QGraphicsTextItem(parent)
+Score::Score()
 {
     score = 0;
 
